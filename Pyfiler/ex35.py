@@ -1,3 +1,4 @@
+# -- coding: utf-8 --
 from sys import exit
 
 def gold_room():
@@ -56,10 +57,12 @@ def cthulhu_room():
 
 
 def dead(why):
+	"""Printer ut at man er dau, og avslutter programmet."
 	print why, "Good job!"
 	exit(0)
 	
 def start():
+	"""Beskriver spillet og tar input fra bruker."""
 	print "You are in a dark room."
 	print "There is a door to your right and left."
 	print "Which one do you take?"
