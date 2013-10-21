@@ -5,6 +5,7 @@ import north
 import west
 import south
 
+
 def dead(why):
 
 	print "game over, your loser!!!!!"

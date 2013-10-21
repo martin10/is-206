@@ -28,7 +28,7 @@ def start():
 	next = raw_input("> ")
 	
 	if next == "east":
-		east.east()
+		east.get_winner()
 	elif next == "south":
 		south.south()
 	elif next == "north":
