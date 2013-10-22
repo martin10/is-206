@@ -6,7 +6,9 @@ import west
 import south
 
 def south():
-	print "This room is full of gold. How much do you take?"
+	print """	This room is full of gold.  
+	You need a little gold to buy a buss ticket to go further 
+	How much do you take?"""
 	
 	next = raw_input("> ")
 	if "0" in next or "1" in next:
