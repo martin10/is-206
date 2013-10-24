@@ -36,6 +36,8 @@ def start():
 		north.north()
 	elif next == "west":
 		west.west()	
+	elif next == "play":
+		east.game()
 	else: 
 		dead("You walk around until you die, goodbye sir!")
 		

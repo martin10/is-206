@@ -22,7 +22,7 @@ def west():
 	
 	if ny_input == "punsh":
 		print "You rescued the guy, the girl gave you a golden key"
-		print "Well done, lets check out the north area of this city..."
+		print "Well done, lets check out the north area of this city...or lets play a game if you dare"
 	elif ny_input == "run back" or "run" or "flee":
 		dead("game over, your loser!!!")		
 		
@@ -34,5 +34,8 @@ def west():
 		south.south()
 	elif next == "north":
 		north.north()
+	elif next =="play":
+		east.game()
+		
 
 
