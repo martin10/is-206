@@ -1,3 +1,4 @@
+#Read the readme file if anything is confusing in this file
 from sys import exit
 
 import east
