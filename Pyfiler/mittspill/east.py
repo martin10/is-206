@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-
+#This file contains a rock paper scissor game, I have used fuctions as re, string and random to complete this. 
 import west
 import south
 import north
@@ -14,7 +14,7 @@ def game():
 Good Luck'''
     while True:
         try:
-            maxpoeng = input('\nHow Many points to win the game?\n > ')
+            maxpoeng = input('\nHow Many points to win the game?\n > ')#determins how many points you need to win this game.
             break
         except:
             print 'Please, write a number....'
@@ -22,10 +22,11 @@ Good Luck'''
     poengc = 0
     valg = ['rock','scissor','paper']
     while poengs < maxpoeng and poengc < maxpoeng:
-        forsok = raw_input('Which weapon do you choose? (rock, scissor, paper)\n> ').lower()
+        forsok = raw_input('Which weapon do you choose? (rock, scissor, paper)\n> ').lower()#Choose "your weapon"
         if forsok == 'quit':
             quit()
-        comp = random.choice(valg)
+        comp = random.choice(valg) #uses the random function so that the "computer" chooses randomly. 
+        #Line 28, to 48 is used to declaire which of the weapon that beats eachother
         if forsok == 'rock':
             if comp == 'rock':
                 pass
@@ -55,8 +56,8 @@ Good Luck'''
         print 'The count is:'
         print '   ',poengs,'            ',poengc
         print '-------------------------------------------------\n'
- 
-    if poengs < poengc:
+    #If- else loop which is used to print out the result.
+    if poengs < poengc: 
         res = 'You lost...'
     else:
         res = 'You won!'
