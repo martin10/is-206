@@ -1,3 +1,4 @@
+#This file is the second room in this game. Cointains a story as well as an opertunity for the user to affect the game
 from sys import exit
 
 import east
