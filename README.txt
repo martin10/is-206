@@ -6,16 +6,15 @@ Tested: 24.10.2013
 Language: English
 Authore: Martine Sivertsen Nilsen 
 Contact: martin10@student.uia.no
-Licence: None, may be used my anybody for any cause
+Licence: None, may be used by anybody for any cause
 
 == Include ==
 All python files for "Learn Python The Hard Way", some files for "Udacity - web development". 
-(.py .txt .doxs)
+(.py .txt .doxs .html)
 
 == Description ==
 This repository is a collection of my files which I wrote in the prosess
 of learning python trhough "Learning Python The Hard Way" and "Udacity - Web Development"
-
 
 == Installation == 
 1. Download the files you would like to run. 
@@ -31,7 +30,6 @@ and that you are in the same directory as the file you are trying to run.
  
 4. Other files: such as *.txt or *.docs may be opened in word. 
 
-
 == Resources ==
 1. Download pyton: http://www.python.org/download/
 
@@ -40,14 +38,6 @@ and that you are in the same directory as the file you are trying to run.
 3. Learn Python The Hard Way: http://learnpythonthehardway.org/book/
 
 4. Udacity - Web Development: https://www.udacity.com/course/cs253
-
-
-== FAQ ==
-I can not run the files.
-Answer: Search the web for info about python, you may also contact me through mail. 
-
-I get a error message while running a file. 
-Include a screenshot and contact me by mail. 
 
 == Other ==
 Thanks for reading! 
