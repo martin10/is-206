@@ -10,7 +10,7 @@ Licence: None, may be used by anybody for any cause
 
 == Include ==
 All python files for "Learn Python The Hard Way", some files for "Udacity - web development". 
-(.py .txt .doxs .html)
+(.py .txt .docx .html)
 
 == Description ==
 This repository is a collection of my files which I wrote in the prosess
