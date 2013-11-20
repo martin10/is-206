@@ -16,7 +16,7 @@ All python files for "Learn Python The Hard Way", some files for "Udacity - web 
 This repository is a collection of my files which I wrote in the prosess
 of learning python trhough "Learning Python The Hard Way" and "Udacity - Web Development"
 
-== Installation == 
+== Run and/or Installation == 
 1. Download the files you would like to run. 
 (only directories require instalation)
  
