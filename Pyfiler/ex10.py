@@ -1,3 +1,5 @@
+#For users with no python experience, 
+#read the lines carefully to understand the code
 tabby_cat = "\tI'm tabbed in."
 persian_cat = "I'm split\non a line."
 backslash_cat = "I'm \\ a \\ cat."
