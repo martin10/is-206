@@ -1,3 +1,5 @@
+#sys.argv is a list in Python, which contains the command-line arguments passed to the script. 
+# Takes raw input from users. Prnit result start at line 20.
 from sys import argv
 
 script, user_name = argv
