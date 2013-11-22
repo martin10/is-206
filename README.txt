@@ -1,12 +1,11 @@
 === General information ===
 Project name: Is-206	
-Date: 25.10.2013			
-Version: 1.0
-Tested: 24.10.2013
+Date: 22.11.2013			
+Version: 1.1
+Tested: 22.10.2013
 Language: English
 Authore: Martine Sivertsen Nilsen 
 Contact: martin10@student.uia.no
-Licence: None, may be used by anybody for any cause
 
 == Include ==
 All python files for "Learn Python The Hard Way", some files for "Udacity - web development". 
@@ -24,11 +23,14 @@ of learning python trhough "Learning Python The Hard Way" and "Udacity - Web Dev
 with the following command: python ex*.py  -  example: python ex01.py  
 
 3. Make sure you have python 2.7 innstalled on your computer
-and that you are in the same directory as the file you are trying to run. 
 
 4. Directories from this repository may most sucsessfully be runned with google app engine.
  
 4. Other files: such as *.txt or *.docs may be opened in word. 
+
+5. If you want to run any of my files, please, do learn some basic terminal language.
+Having basic terminal language is an crucial factor for knowing how to run my files.
+In other owrds: You can borrow my car, if you know how to drive. 
 
 == Resources ==
 1. Download pyton: http://www.python.org/download/
@@ -38,6 +40,8 @@ and that you are in the same directory as the file you are trying to run.
 3. Learn Python The Hard Way: http://learnpythonthehardway.org/book/
 
 4. Udacity - Web Development: https://www.udacity.com/course/cs253
+
+5. Terimal tutorial: http://computers.tutsplus.com/tutorials/40-terminal-tips-and-tricks-you-never-thought-you-needed--mac-51192
 
 == Other ==
 Thanks for reading! 
