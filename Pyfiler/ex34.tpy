@@ -1,3 +1,4 @@
+#Making a list with anaimals, printing animal 0 at line 4. 
 animals = ['bear', 'python', 'peacock', 'kangaroo', 'whale', 'platypus']
 
 print animals[0]
