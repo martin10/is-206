@@ -1,8 +1,9 @@
+#Import statement
 from random import randint
 
 class RoomError(Exception):
     pass
-
+#Defining a class which name is room. 
 class Room(object):
 
     def __init__(self, name, description):
@@ -16,7 +17,7 @@ class Room(object):
     def add_paths(self, paths):
         self.paths.update(paths)
 
-
+#The story. 
 central_corridor = Room("Central Corridor",
 """
 The Gothons of Planet Percal #25 have invaded your ship and destroyed
