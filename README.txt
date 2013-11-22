@@ -1,8 +1,8 @@
 === General information ===
-Project name: Is-206	
+Project name: IS-206	
 Date: 22.11.2013			
-Version: 1.1
-Tested: 22.10.2013
+Version: 1.10
+Tested: 22.11.2013
 Language: English
 Authore: Martine Sivertsen Nilsen 
 Contact: martin10@student.uia.no
