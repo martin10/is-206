@@ -1,3 +1,4 @@
+#This scripts opens a file and reads it. 
 from sys import argv
 
 script, filename = argv
