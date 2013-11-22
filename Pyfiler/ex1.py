@@ -1,3 +1,4 @@
+#Print is a statement that prints out text when it is called
 print "Hello World!"
 print "Hello Again"
 print "I like typing this."
