@@ -1,3 +1,4 @@
+#Learning about if, elif and else.
 people = 30
 cars = 40
 buses = 15
