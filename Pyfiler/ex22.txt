@@ -1,0 +1,45 @@
+Exercise 22: 
+
+
+print	output, printer til brukeren 
+python	Kjører script ved hjelp av Python
+#	Skriv kommentar, kjøres utenfor scriptet.
++	Adderer
+-	Substraherer
+/	Dividerer
+*	Multipliserer
+%	modulo operator
+>	Større enn
+<	Mindre enn
+>=	Større enn, eller lik
+<=	Mindre enn, eller lik
+=	Lik
+%d	Desimal
+%r	String
+%s	String
+/n	Ny linje
+/t	Tab
+\	Escape
+\\	Escape
+“”"	String, man kan skrive så mange linjer man vil. 
+”’	String, man kan skrive så mange linjer man vil. 
+raw_input	Leser en string fra input. Eks. brukeren som bruker programmet må skrive inn en string. 
+pydoc	python dokumentasjon
+open	Åpner en fil
+file	Åpner eller lager en fil
+os	Operativsystem
+sys	innebygd modul
+import	importer en modul
+argv	Liste over kommandoline argumenter som passeres gjennom python script. Feks filnavn, string.
+read	Leser innholdet i en fil
+close	Lukker en fil
+readline	Leser en linje fra en fil..
+truncate	Sletter innholdet i en fil, men ikke selve fila. 
+write	Skriver til en fil
+exists	Returnerer “True” hvis stien referer til en eksisterende sti. Returnerer “False” hvis stien ikke stemmer. 
+def	definerer og starter en funksjon.
+*args	pass an argument list, like argvs for functions
+seek	Setter en fils posisjon. 
++=	delimiter, variable equals itself plus one
+return	Returnerer hva som helst bare man har en =
+
