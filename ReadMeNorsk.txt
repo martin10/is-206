@@ -41,4 +41,4 @@ eks: project - gothonweb, kan du kjøre denne med google app enige.
 
 == Diverse ==
 Takk for at du leste.
-Se alle
+
