@@ -1,12 +1,11 @@
 === Generell informasjon ===
 Prosjekt navn: Is-206	
-Dato: 25.10.2013	
-Versjon: 1.0
-Sist testet: 24.10.2013
+Dato: 22.11.2013	
+Versjon: 1.1
+Sist testet: 22.11.2013
 Språk: English
 Utvikler: Martine Sivertsen Nilsen 
-Kontaktinformasjon: martin10@student.uia.no
-Lisens: None, may be used by anybody for any cause
+Kontakt: martin10@student.uia.no
 
 == Inkludert ==
 Alle python filer for "Learn Python The hard Way", noen filer for "Udacity - web development". 
@@ -30,6 +29,8 @@ eks: project - gothonweb, kan du kjøre denne med google app enige.
 
 4. Andre filer, som eks:*.txt or *.docs may be opened in word. 
 
+5. Skal du bruke noen av disse filene, er det viktig at du har en basis kunnskap hva angår terminal språk.
+
 == Kilder ==
 1. Last ned pyton: http://www.python.org/download/
 
@@ -38,6 +39,8 @@ eks: project - gothonweb, kan du kjøre denne med google app enige.
 3. Learn Python The Hard Way: http://learnpythonthehardway.org/book/
 
 4. Udacity - Web Development: https://www.udacity.com/course/cs253
+
+5. Terimal tutorial: http://computers.tutsplus.com/tutorials/40-terminal-tips-and-tricks-you-never-thought-you-needed--mac-51192
 
 == Diverse ==
 Takk for at du leste.
