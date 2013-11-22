@@ -1,6 +1,4 @@
-# -- coding: utf-8 -- 
-# Here's some new strange stuff, remember type it exactly.
-
+#Printing day of the week, and motnhs of the year.
 days= "Mon Tue Wed Thu Fri Sat Sun"
 months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
 
