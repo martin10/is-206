@@ -1,3 +1,4 @@
+#sys.argv is a list in Python, which contains the command-line arguments passed to the script. 
 from sys import argv
 
 script, first, second, third = argv
