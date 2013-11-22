@@ -1,4 +1,5 @@
 # -- coding: utf-8 --
+#If you do not speak norwegian, try copying this script into google translate. 
 from sys import argv
 
 script, filename = argv
