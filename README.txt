@@ -1,6 +1,6 @@
 === General information ===
 Project name: IS-206	
-Date: 22.11.2013			
+Date: 25.11.2013			
 Version: 1.10
 Tested: 22.11.2013
 Language: English
@@ -9,7 +9,7 @@ Contact: martin10@student.uia.no
 
 == Include ==
 All python files for "Learn Python The Hard Way", some files for "Udacity - web development". 
-(.py .txt .docx .html)
+(.py .txt .pdf .html)
 
 == Description ==
 This repository is a collection of my files which I wrote in the prosess
