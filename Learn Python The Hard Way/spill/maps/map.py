@@ -67,6 +67,8 @@ He is hovering, and there is reaking black fog from him
 Behind him is a little girl, she is scared.
 you can either run back or punsh the guy
 what do you do?
+     
+
 """
 	
 )
@@ -84,6 +86,7 @@ There is a big door here. On the bottom of the door, there is another door.
 A small door, with a keyhole. Do you insert golden key or flee?
 
 insert or flee? 
+
 """
 )
 castle = Room("Castle", 
@@ -119,11 +122,15 @@ I think the weapon is in the SOURCE some where, go look for it!
 dungeon = Room("The dungeon",
 """
 We got the weapon, now kill him!! KILL HIM!
+            	
 """
 )
 win = Room("Finish",
 """
 You rescued the city...Oggie is dead. Thanks for playing!
+ 
+                                    
+ 
 """
 )
 #death message
