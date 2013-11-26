@@ -1,9 +1,9 @@
 import web
-from maps import hovedrom
+from maps import map
 
 urls = (
   '/game', 'GameEngine',
-  '/', 'Index',
+  '/', 'Index', '/sttc',
 )
 
 app = web.application(urls, globals())
@@ -23,7 +23,7 @@ render = web.template.render('templates/', base="layout")
 class Index(object):
     def GET(self):
         # this is used to "setup" the session with starting values
-        session.room = hovedrom.start
+        session.room = map.START
         web.seeother("/game")
 
 
