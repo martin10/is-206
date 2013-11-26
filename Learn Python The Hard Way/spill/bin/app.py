@@ -1,6 +1,8 @@
+#import web so this app can run on the web
 import web
 from maps import map
 
+#sets urls, game i
 urls = (
   '/game', 'GameEngine',
   '/', 'Index', '/sttc',
@@ -39,7 +41,7 @@ class GameEngine(object):
     def POST(self):
         form = web.input(action=None)
 
-        # there is a bug here, can you fix it?
+        # there is a bug here, can you fix it? - no. 
         if session.room and form.action:
             session.room = session.room.go(form.action)
 

@@ -102,7 +102,6 @@ Write hint if you need help!
 """
 )
 
-
 hint = Room("Hint", 
 """
 The code was cHl0aG9u it is Base64 encrypted, 
@@ -110,6 +109,7 @@ find an online convertor en decode the message and give it to me..
 Be fast! 
 """
 )
+
 oggie = Room("Oggies dungeon",
 """
 The code worked! A door opens to your left, 
@@ -125,14 +125,14 @@ We got the weapon, now kill him!! KILL HIM!
             	
 """
 )
+
 win = Room("Finish",
 """
 You rescued the city...Oggie is dead. Thanks for playing!
  
-                                    
- 
 """
 )
+
 #death message
 generic_death = Room("death", "You died")
 
@@ -186,4 +186,6 @@ dungeon.add_paths({
 	'kill': win,
 	
 })
+
+#Defines where the users starts, in this case it is at room central_corridor.
 START = central_corridor
