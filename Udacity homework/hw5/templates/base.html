@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <link type="text/css" rel="stylesheet" href="/static/main.css" />
 
-  <title>CS 253 Blog</title>
+  <title>Martine | IS-206</title>
 </head>
 
 <body>
   <a href="/blog" class="main-title">
-    CS 253 Blog
+   Martine | IS-206
   </a>
 
-  <div class="login-area">
+  <div class="login-area"><!-- login area, gets input from python script--> 
     {% if user %}
       {{user.name}} (<a class="login-link" href="/logout">logout</a>)
     {% else %}
@@ -21,7 +22,7 @@
     {% endif %}
   </div>
 
-  <div id="content">
+  <div id="content"><!--Basic main content for the site--> 
   {% block content %}
   {% endblock %}
   </div>
