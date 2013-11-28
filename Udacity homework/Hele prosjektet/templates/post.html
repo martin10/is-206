@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/static/style.css" />
+
+  <div class="post">
+  
+  <div class="post-heading">
+    <div class="post-title">
+    <h5> Emne: </h5> {{p.subject}}
+    </div>
+
+    <div class="post-date">
+    <p> Dato: </p>  {{p.created.strftime("%b %d, %Y")}}
+    </div>
+  </div>
+
+  <div class="post-content">
+  <h4> Blogginnlegg: </h4>
+    {{p._render_text | safe}}
+  </div>
+</div>
+
+      

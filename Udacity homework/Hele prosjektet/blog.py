@@ -16,7 +16,7 @@ template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir),
                                autoescape = True)
 
-secret = 'fart'
+secret = 'python'
 
 def render_str(template, **params):
     t = jinja_env.get_template(template)
@@ -75,7 +75,7 @@ class BlogHandler(webapp2.RequestHandler):
 
 class MainPage(BlogHandler):
   def get(self):
-      self.write('Hello, Udacity!')
+      self.render('frontpage.html')
 
 
 ##### user stuff
@@ -124,7 +124,7 @@ class User(db.Model):
             return u
 
 
-##### blog stuff
+# blogg stuff
 
 def blog_key(name = 'default'):
     return db.Key.from_path('blogs', name)
@@ -189,9 +189,21 @@ class NewPost(BlogHandler):
             p.put()
             self.redirect('/blog/%s' % str(p.key().id()))
         else:
-            error = "subject and content, please!"
+            error = "Emne og innhold, takk."
             self.render("newpost.html", subject=subject, content=content, error=error)
 
+class Rot13(BlogHandler):
+    def get(self):
+        self.render('rot13-form.html')
+
+    def post(self):
+        rot13 = ''
+        text = self.request.get('text')
+        if text:
+            rot13 = text.encode('rot13')
+
+        self.render('rot13-form.html', text = rot13)
+        
 
 USER_RE = re.compile(r"^[a-zA-Z0-9_-]{3,20}$")
 def valid_username(username):
@@ -220,18 +232,18 @@ class Signup(BlogHandler):
                       email = self.email)
 
         if not valid_username(self.username):
-            params['error_username'] = "That's not a valid username."
+            params['error_username'] = "Brukernavnet er ikke godkjent"
             have_error = True
 
         if not valid_password(self.password):
-            params['error_password'] = "That wasn't a valid password."
+            params['error_password'] = "Passordet er ikke godkjent."
             have_error = True
         elif self.password != self.verify:
-            params['error_verify'] = "Your passwords didn't match."
+            params['error_verify'] = "Passordene matcher ikke"
             have_error = True
 
         if not valid_email(self.email):
-            params['error_email'] = "That's not a valid email."
+            params['error_email'] = "E-posten er ikke godkjent"
             have_error = True
 
         if have_error:
@@ -242,23 +254,20 @@ class Signup(BlogHandler):
     def done(self, *a, **kw):
         raise NotImplementedError
 
-class Unit2Signup(Signup):
-    def done(self):
-        self.redirect('/unit2/welcome?username=' + self.username)
 
 class Register(Signup):
     def done(self):
         #make sure the user doesn't already exist
         u = User.by_name(self.username)
         if u:
-            msg = 'That user already exists.'
+            msg = 'Brukernavnet eksisterer, velg et annet'
             self.render('signup-form.html', error_username = msg)
         else:
             u = User.register(self.username, self.password, self.email)
             u.put()
 
             self.login(u)
-            self.redirect('/unit3/welcome')
+            self.redirect("/")
 
 class Login(BlogHandler):
     def get(self):
@@ -271,7 +280,7 @@ class Login(BlogHandler):
         u = User.login(username, password)
         if u:
             self.login(u)
-            self.redirect('/unit3/welcome')
+            self.redirect('/blog')
         else:
             msg = 'Invalid login'
             self.render('login-form.html', error = msg)
@@ -279,32 +288,17 @@ class Login(BlogHandler):
 class Logout(BlogHandler):
     def get(self):
         self.logout()
-        self.redirect('/signup')
+        self.redirect('/')
 
-class Unit3Welcome(BlogHandler):
-    def get(self):
-        if self.user:
-            self.render('welcome.html', username = self.user.name)
-        else:
-            self.redirect('/signup')
 
-class Welcome(BlogHandler):
-    def get(self):
-        username = self.request.get('username')
-        if valid_username(username):
-            self.render('welcome.html', username = username)
-        else:
-            self.redirect('/unit2/signup')
 
 app = webapp2.WSGIApplication([('/', MainPage),
-                               ('/unit2/signup', Unit2Signup),
-                               ('/unit2/welcome', Welcome),
+							   ('/rot13', Rot13),
                                ('/blog/?(?:.json)?', BlogFront),
                                ('/blog/([0-9]+)(?:.json)?', PostPage),
                                ('/blog/newpost', NewPost),
                                ('/signup', Register),
                                ('/login', Login),
                                ('/logout', Logout),
-                               ('/unit3/welcome', Unit3Welcome),
                                ],
                               debug=True)

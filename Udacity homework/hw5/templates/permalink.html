@@ -1,7 +1,0 @@
-<!-- Signals that this template extends a parent template. -->
-{% extends "base.html" %}
-
-<!-- Defines a block that can be overridden by child templates --> 
-{% block content %}
-  {{post.render() | safe}}
-{% endblock %}
