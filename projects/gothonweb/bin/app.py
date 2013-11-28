@@ -1,5 +1,5 @@
 import web
-from gothonweb import map
+from maps import map
 
 urls = (
   '/game', 'GameEngine',
