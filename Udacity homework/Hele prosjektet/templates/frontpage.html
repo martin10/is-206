@@ -1,85 +1,99 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-<meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/static/style.css" />
-  <title>Assigment 3 Is-206</title>
-</head>
+    <!-- Definerer charset-->
+    <meta charset="utf-8">
+    <!-- Linker til css stylesheet for å gi utseende til nettsiden.-->
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
 
+    <title>Assigment 3 Is-206</title>
+</head><!-- Body start -->
 
 <body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="/l">Martine Sivertsen Nilsen</a></h1>
-          <h2>Assigment 3</h2>
-        </div>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-         <li class="selected"><a href="/">Hjem</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/blog/newpost">Ny post</a></li>
-          <li><a href="/signup">Registrer deg</a></li>
-          <li><a href="/login">Logg inn</a></li>
-          <li><a href="/rot13">Rot 13</a></li>
+    <!-- main er definerer hele siden -->
+    <div id="main">
+        <!-- Definerer hele headeren -->
+        <div id="header">
+            <!-- Definerer logoen i headern. -->
+            <div id="logo">
+                <!-- Eventuel tekst under logoen-->
+                <div id="logo_text">
+                    <!-- class="logo_colour", allows you to change the colour of the text -->
+                    <h1><a href="/l">Martine Sivertsen Nilsen</a></h1>
 
-        </ul>
-      </div>
-    </div>
-    
-    <div id="content_header"></div>
-    <div id="site_content">
-  
+                    <h2>Assigment 3</h2>
+                </div>
+            </div><!-- Hele meny baren -->
+            <div id="menubar">
+                <!--Selve meny elementene -->
+                <ul id="menu">
+                    <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                    <li class="selected"><a href="/">Hjem</a></li>
 
-      <div id="sidebar_container">
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <!-- insert your sidebar items here -->
-            <h3>Om nettsiden</h3>
-        
-            <p>Denne nettisden er laget i forbindelse med is-206. Designet krediteres til <a href="http://www.opendesigns.org/design/simple-style-4/">Open Designs</a></p>
-          </div>
-          
-          <div class="sidebar_base"></div>
+                    <li><a href="/blog">Blog</a></li>
+
+                    <li><a href="/blog/newpost">Ny post</a></li>
+
+                    <li><a href="/signup">Registrer deg</a></li>
+
+                    <li><a href="/login">Logg inn</a></li>
+
+                    <li><a href="/rot13">Rot 13</a></li>
+                </ul>
+            </div>
+        </div><!-- Definerer content + sidebar-->
+        <div id="site_content">
+            <!-- Sidebar container har 3 bokser som kan fylles, hver boks er 3 delt, top del, mellom(innholdet) og bunn. -->
+            <div id="sidebar_container">
+                <div class="sidebar">
+                    <div class="sidebar_top"></div>
+
+                    <div class="sidebar_item">
+                        <!-- Innholdet i sidebaren-->
+                        <h3>Om nettsiden</h3>
+
+                        <p>Denne nettisden er laget i forbindelse med is-206.
+                        Designet krediteres til <a href=
+                        "http://www.opendesigns.org/design/simple-style-4/">Open
+                        Designs</a></p>
+                    </div>
+
+                    <div class="sidebar_base"></div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="sidebar_top"></div>
+
+                    <div class="sidebar_base"></div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="sidebar_top"></div>
+                    <!-- Den nereste boksen av sidebarene, har lagt ved pythonskript som viser brukernavn hvis brukeren er logget inn, hvis ikke viser den regisreringsknapp-->
+                    <div class="sidebar_item">
+                        {% if user %}
+
+                        <p>Du er logget inn som:</p>{{user.name}} (<a class=
+                        "login-link" href="/logout">logout</a>) {% else %}
+                        <a class="login-link" href="/login">Logg Inn</a> |
+                        <a class="login-link" href="/signup">Registrer deg</a>
+                        {% endif %}
+                    </div>
+
+                    <div class="sidebar_base"></div>
+                </div>
+            </div><!-- hovedboksen på nettsiden. -->
+
+            <div id="content">
+                <h3>Velkommen</h3>
+
+                <p>Nettsiden er under konstruksjon</p>
+            </div>
+        </div><!-- Div for footeren-->
+        <div id="footer">
+            MSN/2013
         </div>
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-         
-          <div class="sidebar_base"></div>
-        </div>
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-             {% if user %}
-      <p> Du er logget inn som:</p>   {{user.name}} (<a class="login-link" href="/logout">logout</a>)
-    {% else %}
-      <a class="login-link" href="/login">Logg Inn</a>
-      |
-      <a class="login-link" href="/signup">Registrer deg</a>
-    {% endif %}
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-      </div>
-      <div id="content">
-        
-    <h3>Velkommen</h3>
-        
-            <p>Nettsiden er under konstruksjon</p>
-            
- 
-       
-      </div>
     </div>
-    <div id="content_footer"></div>
-    <div id="footer">
-     MSN/2013
-    </div>
-  </div>
 </body>
 </html>
