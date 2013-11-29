@@ -1,9 +1,14 @@
+#Application ID
 application: martinesivertsennilsen
+#Version
 version: 1
+#Runtime enviroment for the app. 
 runtime: python27
 api_version: 1
+#Use concurrent requests
 threadsafe: true
 
+#Url patterns and how they are handeled.
 handlers:
 - url: /static
   static_dir: static
@@ -11,7 +16,7 @@ handlers:
 - url: /.*
   script: blog.app
 
-
+#Libaries 
 libraries:
 - name: jinja2
   version: latest
