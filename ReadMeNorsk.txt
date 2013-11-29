@@ -1,8 +1,8 @@
 === Generell informasjon ===
 Prosjekt navn: Is-206	
-Dato: 22.11.2013	
-Versjon: 1.1
-Sist testet: 22.11.2013
+Dato: 28.11.2013	
+Versjon: 2.0
+Sist testet: 29.11.2013
 Språk: English
 Utvikler: Martine Sivertsen Nilsen 
 Kontakt: martin10@student.uia.no
