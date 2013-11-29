@@ -17,8 +17,7 @@ of learning python trhough "Learning Python The Hard Way" and "Udacity - Web Dev
 
 == Run and/or Installation == 
 1. Download the files you would like to run. 
-(only directories require Installation)
- 
+
 2. Python files marked as ex*.py may be runned from a powershell(Windows) or a regular shell(OS X)
 with the following command: python ex*.py  -  example: python ex01.py  
 
