@@ -21,7 +21,7 @@ class Room(object):
 
 
 #defining that central_corridor is a room, as well as the name
-central_corridor = Room("Do you dare?", 
+start = Room("Do you dare?", 
 #description.
 """
 Welcome to our humble town Rekssand.
@@ -156,7 +156,7 @@ north.add_paths({
 	'insert': castle,
 		
 })
-central_corridor.add_paths({
+start.add_paths({
     'go on': hovedrom,
   
 })
@@ -188,4 +188,4 @@ dungeon.add_paths({
 })
 
 #Defines where the users starts, in this case it is at room central_corridor.
-START = central_corridor
+START = start

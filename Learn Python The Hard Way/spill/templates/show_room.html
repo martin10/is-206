@@ -1,11 +1,11 @@
 $def with (room)
 
 <h1> $room.name </h1>
-
+<!-- gets description of room object --> 
 <pre>
 $room.description
 </pre>
-
+<!-- if room name is death return play again, if not take  input from user -->
 $if room.name == "death":
     <p><a href="/">Play Again?</a></p>
 $else:

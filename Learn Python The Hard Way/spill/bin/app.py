@@ -2,7 +2,7 @@
 import web
 from maps import map
 
-#sets urls, game i
+#sets urls
 urls = (
   '/game', 'GameEngine',
   '/', 'Index', '/sttc',
@@ -28,16 +28,16 @@ class Index(object):
         session.room = map.START
         web.seeother("/game")
 
-
+#Class GameEningen, if a room has a session returns show.room html if not die. 
 class GameEngine(object):
 
     def GET(self):
         if session.room:
             return render.show_room(room=session.room)
         else:
-            # why is there here? do you need it?
+            
             return render.you_died()
-
+	#Takes input from user.
     def POST(self):
         form = web.input(action=None)
 
