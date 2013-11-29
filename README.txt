@@ -43,4 +43,7 @@ In other owrds: You can borrow my car, if you know how to drive.
 5. Terimal tutorial: http://computers.tutsplus.com/tutorials/40-terminal-tips-and-tricks-you-never-thought-you-needed--mac-51192
 
 == Other ==
+Had some problems with commenting the blog.py file in udacity homework, to solve this I had to make an extra
+file with the same content but with comments. 
+
 Thanks for reading! 
