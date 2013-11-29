@@ -1,10 +1,12 @@
 /*html doc height is set to 100% */
 html
 { height: 100%;}
+
 /*no margin or padding, if this wasent her the page would have a default "boarder"*/
 *
 { margin: 0;
   padding: 0;}
+
 /*defines font, and colour for body*/
 body
 { font: normal .80em 'trebuchet ms', arial, sans-serif;
@@ -15,6 +17,10 @@ body
 p
 { padding: 0 0 20px 0;
   line-height: 1.7em;}
+
+img
+{ border: 0;}
+
 /*fetures for headlines */
 h1, h2, h3, h4, h5, h6 
 { color: #362C20;
@@ -26,7 +32,28 @@ h1, h2, h3
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;
   color: #000;}
-  
+
+h2
+{ font-size: 160%;
+  padding: 9px 0 5px 0;
+  color: #009FBC;}
+
+h3
+{ font-size: 140%;
+  padding: 5px 0 0 0;}
+
+h4, h6
+{ color: #009FBC;
+  padding: 0 0 5px 0;
+  font: normal 110% arial;
+  text-transform: uppercase;}
+
+h5, h6
+{ color: #888;
+  font: normal 95% arial;
+  letter-spacing: normal;
+  padding: 0 0 15px 0;}
+
 a, a:hover
 { outline: none;
   text-decoration: underline;
@@ -34,6 +61,12 @@ a, a:hover
 
 a:hover
 { text-decoration: none;}
+
+blockquote
+{ margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;}
 
 /*features for lists*/
 ul
@@ -66,10 +99,11 @@ ol li
   text-align: center;
   margin: 20px auto;}
 
+/*header + logo featres */
 #main, #logo, #menubar, #site_content, #footer
 { margin-left: auto; 
   margin-right: auto;}
-/*header + logo featres */
+
 #header
 { background: #323534 url(back.png) repeat-x;
   height: 177px;}
@@ -90,7 +124,24 @@ ol li
   border-bottom: 0;
   text-transform: none;
   margin: 0 0 0 9px;}
-  
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
+{ padding: 22px 0 0 0;
+  color: #FFF;
+  letter-spacing: 0.1em;
+  text-decoration: none;}
+
+#logo_text h1 a .logo_colour
+{ color: #E4EC04;}
+
+#logo_text a:hover .logo_colour
+{ color: #FFF;}
+
+#logo_text h2
+{ font-size: 120%;
+  padding: 4px 0 0 0;
+  color: #999;}
+
 /*menubar, menubar itmes */
 #menubar
 { width: 880px;
@@ -139,6 +190,7 @@ ul#menu li a:hover
   overflow: hidden;
   margin: 20px auto 0 auto;
   padding: 0 0 10px 0;} 
+
 /*side bar*/
 #sidebar_container
 { float: right;
@@ -187,7 +239,6 @@ ul#menu li a:hover
   margin: 0 0 0 0; 
   padding: 0 0 4px 25px;
   line-height: 1.5em;}
-
 /*features for footer*/
 #footer
 { width: 100%;
@@ -199,3 +250,86 @@ ul#menu li a:hover
   background: #3B3939 url(footer.png) repeat-x;
   color: #A8AA94;}
 
+#footer p
+{ line-height: 1.7em;
+  padding: 0 0 10px 0;}
+
+#footer a
+{ color: #A8AA94;
+  text-decoration: none;}
+
+#footer a:hover
+{ color: #FFF;
+  text-decoration: none;}
+
+.search
+{ color: #5D5D5D; 
+  border: 1px solid #BBB; 
+  width: 134px; 
+  padding: 4px; 
+  font: 100% arial, sans-serif;}
+
+.form_settings
+{ margin: 15px 0 0 0;}
+
+.form_settings p
+{ padding: 0 0 4px 0;}
+
+.form_settings span
+{ float: left; 
+  width: 200px; 
+  text-align: left;}
+  
+.form_settings input, .form_settings textarea
+{ padding: 5px; 
+  width: 299px; 
+  font: 100% arial; 
+  border: 1px solid #E5E5DB; 
+  background: #FFF; 
+  color: #47433F;}
+  
+.form_settings .submit
+{ font: 100% arial; 
+  border: 0; 
+  width: 99px; 
+  margin: 0 0 0 212px; 
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #3B3B3B; 
+  color: #FFF;}
+
+.form_settings textarea, .form_settings select
+{ font: 100% arial; 
+  width: 299px;}
+
+.form_settings select
+{ width: 310px;}
+
+.form_settings .checkbox
+{ margin: 4px 0; 
+  padding: 0; 
+  width: 14px;
+  border: 0;
+  background: none;}
+
+.separator
+{ width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0;}
+  
+table
+{ margin: 10px 0 30px 0;}
+
+table tr th, table tr td
+{ background: #3B3B3B;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;}
+  
+table tr td
+{ background: #E5E5DB;
+  color: #47433F;
+  border-top: 1px solid #FFF;}
